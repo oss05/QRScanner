@@ -1,3 +1,8 @@
+function showQRIntro(){
+  return confirm("Use your camera to take a picture of a QR code.");
+}
+
+
 function openQRCamera(node) {
     var reader = new FileReader();
     reader.onload = function() {
