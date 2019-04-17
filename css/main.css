@@ -11,11 +11,12 @@ input, label {
     margin-right: 0;
     vertical-align: middle;
     border: solid 1px red;
+    display: none;
 }
 
-.qrcode-text + .qrcode-text-btn {
+.qrcode-text+.qrcode-text-btn {
     width: 1.7em;
-    margin-left: -1.7em;
+    /* margin-left: -1.7em; */
     vertical-align: middle;
 }
 
@@ -30,8 +31,7 @@ input, label {
 .qrcode-text-btn>input[type=file] {
     position: absolute;
     overflow: hidden;
-    width: 1px; 
+    width: 1px;
     height: 1px;
     opacity: 0;
 }
-
