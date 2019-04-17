@@ -10,6 +10,7 @@ input, label {
     padding-right: 1.7em;
     margin-right: 0;
     vertical-align: middle;
+    border: solid 1px red;
 }
 
 .qrcode-text + .qrcode-text-btn {
@@ -33,3 +34,4 @@ input, label {
     height: 1px;
     opacity: 0;
 }
+
