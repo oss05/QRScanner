@@ -18,3 +18,8 @@ function openQRCamera(node) {
     };
     reader.readAsDataURL(node.files[0]);
   }
+
+  $("#btn").click( function() {
+    var url = " " + $("#text").val();
+    window.open(url);
+});
