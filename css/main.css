@@ -9,18 +9,18 @@ label {
 }
 
 .container{
-    border: solid 1px red;
+    /* border: solid 1px red; */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .container-in{
-    border: solid 1px blue;
+    /* border: solid 1px blue; */
 }
 
 .form-horizontal{
-    border: solid 1px green;
+    /* border: solid 1px green; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,7 +34,7 @@ label {
 
 
 .container_camera{
-    border: solid 1px yellowgreen;
+    /* border: solid 1px yellowgreen; */
     margin-top: 5em;
     height: 5em;
     display: flex;
