@@ -9,32 +9,54 @@
   </head>
   <body>
     <!-- ----------------------------QR generator start----------------- -->
-    <div class="qr-code-generator">
-      <input type="text" class="qr-url" placeholder="URL or Text" />
-      <input type="number" class="qr-size" value="128" min="20" max="500" />
-
-      <button class="generate-qr-code">Generate</button>
-
-      <br />
-
-      <div id="qrcode"></div>
+    <div class="container">
+      <div class="container-in">
+        <img
+          src="https://chart.googleapis.com/chart?cht=qr&chl=Hello+World&chs=160x160&chld=L|0"
+          class="qr-code img-thumbnail img-responsive"
+        />
+      </div>
+      <div class="form-horizontal">
+        <div class="form-group">
+          <label for="content">Content:</label>
+          <div class="col-sm-10">
+            <input
+              type="text"
+              class="form-control"
+              id="content"
+              placeholder="Ingresa URL"
+            />
+          </div>
+        </div>
+        <div>
+          <div>
+            <button type="button" class="btn btn-default" id="generate">
+              Generar código QR
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- ----------------------------QR generator end----------------- -->
     <!-- ----------------------Scan Button---------------- -->
-    <input type="text" class="qrcode-text" /><label class="qrcode-text-btn">
-      <input
-        type="file"
-        accept="image/*"
-        capture="environment"
-        onclick="return showQRIntro();"
-        onchange="openQRCamera(this);"
-        tabindex="-1"
-      />
-    </label>
+    <div class="container_camera">
+      <input type="text" id="text" placeholder="ID" class="qrcode-text" /><label
+        class="qrcode-text-btn"
+        ><input
+          type="file"
+          accept="image/*"
+          capture="environment"
+          onclick="return showQRIntro();"
+          onchange="openQRCamera(this);"
+          tabindex="-1"
+        />
+      </label>
+      <input type="button" id="btn" value="go" />
+    </div>
+
     <!-- ------------------------Scan Button end---------------------- -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://rawgit.com/sitepoint-editors/jsqrcode/master/src/qr_packed.js"></script>
-    c
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/130527/qrcode.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

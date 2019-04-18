@@ -1,93 +1,76 @@
-body, input {
-    font-size: 14pt
+body,
+input {
+  font-size: 14pt;
 }
 
-input, label {
-    vertical-align: middle
+input,
+label {
+  vertical-align: middle;
+}
+
+.container{
+    /* border: solid 1px red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-in{
+    /* border: solid 1px blue; */
+}
+
+.form-horizontal{
+    /* border: solid 1px green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+}
+
+.qr-code {
+  max-width: 200px;
+  margin: 10px;
 }
 
 
-.qr-code-generator {
-    width: 500px;
-    margin: 0 auto;
-    }
-    
-    .qr-code-generator * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    }
-    
-    #qrcode {
-    width: 128px;
-    height: 128px;
-    margin: 0 auto;
-    text-align: center;
-    }
-    
-    #qrcode a {
-    font-size: 0.8em;
-    }
-    
-    .qr-url, .qr-size {
-    padding: 0.5em;
-    border: 1px solid #ddd;
-    border-radius: 2px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    }
-    
-    .qr-url {
-    width: 79%;
-    }
-    
-    .qr-size {
-    width: 20%;
-    }
-    
-    .generate-qr-code {
-    display: block;
-    width: 100%;
-    margin: 0.5em 0 0;
-    padding: 0.25em;
-    font-size: 1.2em;
-    border: none;
-    cursor: pointer;
-    background-color: #e5554e;
-    color: #fff;
-    }
+.container_camera{
+    /* border: solid 1px yellowgreen; */
+    margin-top: 5em;
+    height: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
 
-
-
-    
 
 .qrcode-text {
-    padding-right: 1.7em;
-    margin-right: 0;
-    vertical-align: middle;
-    border: solid 1px red;
+  padding-right: 1.7em;
+  margin-right: 0;
+  vertical-align: middle;
+  /* border: solid 1px red; */
+  display: none;
 }
 
 .qrcode-text + .qrcode-text-btn {
-    width: 1.7em;
-    margin-left: -1.7em;
-    vertical-align: middle;
+  width: 1.7em;
+  /* margin-left: -1.7em; */
+  vertical-align: middle;
 }
 
 .qrcode-text-btn {
-    display: inline-block;
-    background: url(//dab1nmslvvntp.cloudfront.net/wp-content/uploads/2017/07/1499401426qr_icon.svg) 50% 50% no-repeat;
-    height: 1em;
-    width: 1em;
-    cursor: pointer
+  display: inline-block;
+  background: url(//dab1nmslvvntp.cloudfront.net/wp-content/uploads/2017/07/1499401426qr_icon.svg)
+    50% 50% no-repeat;
+  height: 2em;
+  width: 2em !important;
+  cursor: pointer;
 }
 
-.qrcode-text-btn>input[type=file] {
-    position: absolute;
-    overflow: hidden;
-    width: 1px; 
-    height: 1px;
-    opacity: 0;
+.qrcode-text-btn > input[type="file"] {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
 }
-
