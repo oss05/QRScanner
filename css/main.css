@@ -1,12 +1,51 @@
-body, input {
-    font-size: 14pt
+body,
+input {
+  font-size: 14pt;
 }
 
-input, label {
-    vertical-align: middle
+input,
+label {
+  vertical-align: middle;
 }
+
+.container{
+    /* border: solid 1px red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-in{
+    /* border: solid 1px blue; */
+}
+
+.form-horizontal{
+    /* border: solid 1px green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+}
+
+.qr-code {
+  max-width: 200px;
+  margin: 10px;
+}
+
+
+.container_camera{
+    /* border: solid 1px yellowgreen; */
+    margin-top: 5em;
+    height: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
 
 .qrcode-text {
+<<<<<<< HEAD
     padding-right: 1.7em;
     margin-right: 0;
     vertical-align: middle;
@@ -18,16 +57,31 @@ input, label {
     width: 1.7em;
     /* margin-left: -1.7em; */
     vertical-align: middle;
+=======
+  padding-right: 1.7em;
+  margin-right: 0;
+  vertical-align: middle;
+  /* border: solid 1px red; */
+  display: none;
+}
+
+.qrcode-text + .qrcode-text-btn {
+  width: 1.7em;
+  /* margin-left: -1.7em; */
+  vertical-align: middle;
+>>>>>>> osvo
 }
 
 .qrcode-text-btn {
-    display: inline-block;
-    background: url(//dab1nmslvvntp.cloudfront.net/wp-content/uploads/2017/07/1499401426qr_icon.svg) 50% 50% no-repeat;
-    height: 1em;
-    width: 1em;
-    cursor: pointer
+  display: inline-block;
+  background: url(//dab1nmslvvntp.cloudfront.net/wp-content/uploads/2017/07/1499401426qr_icon.svg)
+    50% 50% no-repeat;
+  height: 2em;
+  width: 2em !important;
+  cursor: pointer;
 }
 
+<<<<<<< HEAD
 .qrcode-text-btn>input[type=file] {
     position: absolute;
     overflow: hidden;
@@ -35,3 +89,12 @@ input, label {
     height: 1px;
     opacity: 0;
 }
+=======
+.qrcode-text-btn > input[type="file"] {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+>>>>>>> osvo
